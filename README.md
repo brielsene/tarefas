@@ -1,7 +1,7 @@
 # Tarefas
 Projeto para anotações de tarefas do dia a dia.
 
-Com essa aplicação web, é possível anotas tarefas que serão feitas diariamente, e também, gerenciar, alterar e remover as tarefas.
+Com essa aplicação web, é possível anotar tarefas que serão feitas diariamente, e também, gerenciar, alterar e remover as tarefas.
 
 <ul>
   <li>Java Servlets, JSP, EL, JSTL</li>
