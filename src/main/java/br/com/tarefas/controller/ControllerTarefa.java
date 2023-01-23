@@ -15,7 +15,7 @@ import br.com.tarefas.acao.Acao;
 /**
  * Servlet implementation class ControllerTarefa
  */
-@WebServlet("/controller")
+//@WebServlet("/controller")
 public class ControllerTarefa extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -26,15 +26,14 @@ public class ControllerTarefa extends HttpServlet {
 		String paramAcao = request.getParameter("acao");
 		
 		
-		HttpSession sessao = request.getSession();
-		boolean usuarioNaoEstaLogado = sessao.getAttribute("usuarioLogado")==null;
-//		boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login"))||paramAcao.equals("FormUsuario");
-		boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login") || paramAcao.equals("FormUsuario"));
-		if(usuarioNaoEstaLogado & ehUmaAcaoProtegida) {
-			response.sendRedirect("controller?acao=FormUsuario");
-			return;
-		}
-		
+//		HttpSession sessao = request.getSession();
+//		boolean usuarioNaoEstaLogado = sessao.getAttribute("usuarioLogado")==null;
+//		boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login") || paramAcao.equals("FormUsuario") || paramAcao.equals("CadastroUsuarioForm") || paramAcao.equals("CadastroUsuario"));
+//		if(usuarioNaoEstaLogado & ehUmaAcaoProtegida) {
+//			response.sendRedirect("controller?acao=FormUsuario");
+//			return;
+//		}
+//		
 		String nomeDaClasse = "br.com.tarefas.acao."+paramAcao;
 		String nome;
 		

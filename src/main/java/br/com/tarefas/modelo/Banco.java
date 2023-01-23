@@ -74,4 +74,18 @@ public class Banco {
 		return null;
 
 	}
+	
+	public boolean ehIgualSenhaCadastro (String senha, String senha2) {
+		if(!(senha.equals(senha2))) {
+			return false;
+		}
+		
+		return true;
+	}
+	
+	public void adicionaUsuario(Usuario usuario) {
+		listaUsuario.add(usuario);
+	}
+	
+	
 }
